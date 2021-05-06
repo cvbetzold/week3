@@ -39,6 +39,24 @@
         margin: 0;
         padding: 0;
       }
+      table {
+        width: 75%;
+        border-collapse: collapse;
+      }
+      th {
+        background-color: black;
+        color: white;
+      }
+      #ssnumber, #author, .cell1, .cell2 {
+        width: 15%;
+        text-align: center;
+      }
+      tr:nth-child(even) {
+        background: #ccc;
+        }
+      tr:nth-child(odd) {
+        background: #fff;
+      }
     </style>
     <style>
       /* #1 */
@@ -101,11 +119,71 @@
             <a href="#" onclick="applyStyle(3)">Stylesheet 4</a>.
             <!-- </div> -->
           </p>
-          <h1>Instructions</h1>
+          <h1>Description</h1>
           <p>
-            Please modify this page to include a description of each stylesheet,
-            including anything clever that you did to achieve a given effect.
-            Please also include the contributors to a given stylesheet.
+            <div id="container">
+            <table>
+              <tr>
+                <th id="ssnumber">
+                  Stylesheet
+                </th>
+                <th id="author">
+                  Author
+                </th>
+                <th id="description">
+                  Description
+                </th>
+              </tr>
+              <tr>
+                <td class="cell1">
+                  Stylesheet 1
+                </td>
+                <td class="cell2">
+                  David Sevey
+                </td>
+                <td class="cell3">
+                  It changes the font to Dancing Script which is a cursive font, it then changes the color of all the h1 texts to a green and centers the h1 in the title div.  
+                  The next thing it does is it takes the list and turns it into a navigation bar at the top of the screen. It changes the text colors, gets rid of the list properties, 
+                  changes the color and cursor on hover. I did have to change the padding on the title h1 div to make sure it would still be visible.  
+                  I also changed the table to flow better, changing the width of the two headers for author and style sheet.  
+                  I then made every other row a different color.
+                </td>
+              </tr>
+              <tr>
+                <td class="cell1">
+                  Stylesheet 2
+                </td>
+                <td class="cell2">
+                  Unknown
+                </td>
+                <td class="cell3">
+                   Coming Soon
+                </td>
+              </tr>
+              <tr>
+                <td class="cell1">
+                  Stylesheet 3
+                </td>
+                <td class="cell2">
+                  Unknown
+                </td>
+                <td class="cell3">
+                   Coming Soon
+                </td>
+              </tr>
+              <tr>
+                <td class="cell1">
+                  Stylesheet 4
+                </td>
+                <td class="cell2">
+                  Unknown
+                </td>
+                <td class="cell3">
+                   Coming Soon
+                </td>
+              </tr>
+            </table>
+            </div>
           </p>
         </div>
         <!-- text -->
